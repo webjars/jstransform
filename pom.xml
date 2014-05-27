@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>jstransform</artifactId>
-    <version>5.0.0</version>
+    <version>5.0.0-SNAPSHOT</version>
     <name>JSTransform</name>
     <description>WebJar for JSTransform</description>
     <url>http://webjars.org</url>
