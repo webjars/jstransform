@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>jstransform</artifactId>
-    <version>6.3.3-SNAPSHOT</version>
+    <version>7.0.0-SNAPSHOT</version>
     <name>JSTransform</name>
     <description>WebJar for JSTransform</description>
     <url>http://webjars.org</url>
@@ -54,7 +54,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstreamVersion>6.3.2</upstreamVersion>
+        <upstreamVersion>7.0.0</upstreamVersion>
         <sourceUrl>https://github.com/facebook/jstransform/archive</sourceUrl>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstreamVersion}</destDir>
         <extractDir>${project.build.directory}/jstransform-${upstreamVersion}</extractDir>
