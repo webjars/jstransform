@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>jstransform</artifactId>
-    <version>10.1.0-SNAPSHOT</version>
+    <version>10.1.0</version>
     <name>JSTransform</name>
     <description>WebJar for JSTransform</description>
     <url>http://webjars.org</url>
@@ -28,7 +28,7 @@
         <url>http://github.com/webjars/jstransform</url>
         <connection>scm:git:https://github.com/webjars/jstransform.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/jstransform.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>jstransform-10.1.0</tag>
     </scm>
 
     <developers>
@@ -90,16 +90,16 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <echo message="unzip archive"/>
-                                <unzip src="${project.build.directory}/jstransform.zip" dest="${project.build.directory}"/>
-                                <echo message="moving resources"/>
+                                <echo message="unzip archive" />
+                                <unzip src="${project.build.directory}/jstransform.zip" dest="${project.build.directory}" />
+                                <echo message="moving resources" />
                                 <move todir="${destDir}/src">
-                                    <fileset dir="${extractDir}/src"/>
+                                    <fileset dir="${extractDir}/src" />
                                 </move>
                                 <move todir="${destDir}/visitors">
-                                    <fileset dir="${extractDir}/visitors"/>
+                                    <fileset dir="${extractDir}/visitors" />
                                 </move>
-                                <move file="${extractDir}/package.json" todir="${destDir}"/>
+                                <move file="${extractDir}/package.json" todir="${destDir}" />
                             </target>
                         </configuration>
                     </execution>
