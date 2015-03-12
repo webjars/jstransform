@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>jstransform</artifactId>
-    <version>7.0.1-SNAPSHOT</version>
+    <version>10.1.0-SNAPSHOT</version>
     <name>JSTransform</name>
     <description>WebJar for JSTransform</description>
     <url>http://webjars.org</url>
@@ -54,7 +54,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstreamVersion>7.0.0</upstreamVersion>
+        <upstreamVersion>10.1.0</upstreamVersion>
         <sourceUrl>https://github.com/facebook/jstransform/archive</sourceUrl>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstreamVersion}</destDir>
         <extractDir>${project.build.directory}/jstransform-${upstreamVersion}</extractDir>
@@ -90,16 +90,16 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <echo message="unzip archive" />
-                                <unzip src="${project.build.directory}/jstransform.zip" dest="${project.build.directory}" />
-                                <echo message="moving resources" />
+                                <echo message="unzip archive"/>
+                                <unzip src="${project.build.directory}/jstransform.zip" dest="${project.build.directory}"/>
+                                <echo message="moving resources"/>
                                 <move todir="${destDir}/src">
-                                    <fileset dir="${extractDir}/src" />
+                                    <fileset dir="${extractDir}/src"/>
                                 </move>
                                 <move todir="${destDir}/visitors">
-                                    <fileset dir="${extractDir}/visitors" />
+                                    <fileset dir="${extractDir}/visitors"/>
                                 </move>
-                                <move file="${extractDir}/package.json" todir="${destDir}" />
+                                <move file="${extractDir}/package.json" todir="${destDir}"/>
                             </target>
                         </configuration>
                     </execution>
@@ -109,13 +109,13 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
-                <version>2.5</version>
+                <version>2.5.1</version>
             </plugin>
 
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>1.5.1</version>
+                <version>1.6.5</version>
                 <extensions>true</extensions>
                 <configuration>
                     <serverId>sonatype-nexus-staging</serverId>
